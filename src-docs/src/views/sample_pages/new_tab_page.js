@@ -12,6 +12,7 @@
 import React, { useState, useMemo } from 'react';
 import {
   OuiCompressedFieldSearch,
+  OuiFieldSearch,
   OuiIcon,
 } from '../../../../src/components';
 import { SOURCE_PAGE_MOCK } from './session_models';
@@ -63,7 +64,7 @@ export const NewTabPage = ({ onSelectPage }) => {
   return (
     <div className="newTabPage">
       {/* Search field */}
-      <OuiCompressedFieldSearch
+      <OuiFieldSearch
         placeholder="Search pages..."
         value={inputValue}
         onChange={(e) => {
@@ -74,23 +75,26 @@ export const NewTabPage = ({ onSelectPage }) => {
       />
 
       {searchResults ? (
-        <div className="emptySessionPage__tabContent">
+        <div className="newTabPage__searchResults" ref={searchListRef} onMouseLeave={handleSearchMouseLeave}>
+          <span className="emptySessionPage__searchLabel" style={{ marginBottom: 8, flexShrink: 0 }}>Suggested pages</span>
           {searchResults.length === 0 ? (
             <p style={{ color: '#676e75', textAlign: 'center', padding: '16px' }}>No results found</p>
           ) : (
-            <>
-              <span className="emptySessionPage__searchLabel">Suggested pages</span>
-              {searchResults.map((item) => (
+            <div className="newTabPage__searchResultsList" ref={searchScrollRef}>
+              {searchResults.map((item, idx) => (
                 <button
                   key={item.key}
                   type="button"
                   className="emptySessionPage__listItem"
+                  onMouseEnter={() => handleSearchHover(idx)}
+                  onMouseDown={() => handleSearchMouseDown(idx)}
+                  onMouseUp={() => handleSearchHover(idx)}
                   onClick={() => onSelectPage(item.pageKey, item.title)}>
                   <span className="emptySessionPage__listItemTitle">{item.title}</span>
                   <span className="emptySessionPage__listItemTime">{item.subtitle}</span>
                 </button>
               ))}
-            </>
+            </div>
           )}
         </div>
       ) : (
@@ -111,7 +115,7 @@ export const NewTabPage = ({ onSelectPage }) => {
           <div className="emptySessionPage__tabContent">
             {/* Discover grid */}
             {activeChip === 'discover' && (
-              <div className="emptySessionPage__sectionHeader">// OPEN A PAGE TO DISCOVER</div>
+              <h4>Open a page to discover</h4>
             )}
             {activeChip === 'discover' && (
               <div className="emptySessionPage__discoverGrid">
@@ -136,7 +140,7 @@ export const NewTabPage = ({ onSelectPage }) => {
 
             {/* Monitor grid */}
             {activeChip === 'monitor' && (
-              <div className="emptySessionPage__sectionHeader">// OPEN A PAGE TO MONITOR</div>
+              <h4>Open a page to monitor</h4>
             )}
             {activeChip === 'monitor' && (
               <div className="emptySessionPage__discoverGrid">
@@ -169,7 +173,7 @@ export const NewTabPage = ({ onSelectPage }) => {
 
             {/* More grid */}
             {activeChip === 'more' && (
-              <div className="emptySessionPage__sectionHeader">// OPEN A PAGE</div>
+              <h4>Open a page</h4>
             )}
             {activeChip === 'more' && (
               <div className="emptySessionPage__discoverGrid">
