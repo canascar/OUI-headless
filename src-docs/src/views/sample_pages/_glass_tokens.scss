@@ -1,0 +1,46 @@
+/*!
+ * Copyright OpenSearch Contributors
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+// ============================================================
+// GLASS THEME — SAMPLE PAGE BRAND TOKENS
+// ------------------------------------------------------------
+// Single source of truth for the accent + surface colors used
+// across the sample pages. Change a value here and it updates
+// everywhere the token is referenced (accent washes, frosted
+// panels, hover borders, etc.).
+//
+// The base theme accent lives in:
+//   src/themes/v9/global_styling/variables/_colors.scss  (light)
+//   src/themes/v9/v9_colors_dark.scss                    (dark)
+// Keep the values below in sync with those if the brand hue
+// ever changes again.
+// ============================================================
+
+// sass-lint:disable hex-length
+
+// ---- Accent (blue) ----
+// Light = blue-500, Dark = blue-300. Use with rgba(token, $alpha)
+// for the translucent accent washes / hover borders.
+$glassAccent:           #3b82f6 !default; // light primary  (rgb 59,130,246)
+$glassAccentDark:       #93c5fd !default; // dark primary   (rgb 147,197,253)
+$glassAccentBright:     #2563eb !default; // light link     (blue-600)
+$glassAccentBrightDark: #60a5fa !default; // dark link      (blue-400)
+
+// ---- Frosted-glass panel tint (dark mode) ----
+// Blue-tinted near-black applied at various alphas behind the
+// backdrop-filter on session / nav / wizard glass panels.
+$glassPanelTintDark:    #0d1226 !default; // rgb 13,18,38
+
+// ---- Solid dark surface ramp ----
+// Matches the v9 dark theme shades; used for solid (non-glass)
+// chips, hover fills and borders inside the sample pages.
+$glassSurfaceDark:      #141b30 !default; // elevated / muted surface
+$glassSurfaceHoverDark: #1d2740 !default; // hover surface
+$glassBorderDark:       #283150 !default; // hairline border
+
+// ---- Dark canvas ----
+$glassCanvasDark:       #080c18 !default; // page background (dark)
+
+// sass-lint:enable hex-length

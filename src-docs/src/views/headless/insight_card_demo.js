@@ -84,7 +84,7 @@ export default () => (
               width: 40,
               height: 40,
               borderRadius: 10,
-              background: 'var(--g-accent, #6366f1)',
+              background: 'var(--g-accent, #3b82f6)',
               flexShrink: 0,
             }}>
               <OuiIcon type="plus" size="m" color="ghost" />

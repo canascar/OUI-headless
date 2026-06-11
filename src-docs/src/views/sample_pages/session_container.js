@@ -265,7 +265,7 @@ export const SessionContainer = ({
   const themeContext = useContext(ThemeContext);
   const isDark = themeContext.theme === 'v9-dark';
   const mascotColor = isDark ? ['#FFFFFF', '#D9DEE5'] : ['#14558E', '#153A5A'];
-  const mascotEyeColor = isDark ? '#181028' : '#fff';
+  const mascotEyeColor = isDark ? '#101828' : '#fff';
 
   // Olly chat pill — show/hide based on minimized state
   const showPill = isMinimized;
@@ -350,7 +350,7 @@ export const SessionContainer = ({
           className="sessionContainer__collapsedPanel"
           style={{ display: isFullScreen ? 'flex' : 'none' }}>
           <div className="sessionContainer__collapsedTabs">
-            <OuiToolTip content="View tabs" position="left" delay="regular">
+            <OuiToolTip content={isCollapsedListOpen ? '' : 'View tabs'} position="left" delay="regular">
               <OuiPopover
                 button={
                   <OuiButtonIcon

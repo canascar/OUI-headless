@@ -18,39 +18,39 @@ $ouiColorInk: #0a0a0a;
 
 // Glass Theme — Dark
 
-// Core — indigo/violet accent palette (lighter for dark bg)
-$ouiColorPrimary: #a5b4fc;       // Indigo light
+// Core — blue accent palette (lighter for dark bg)
+$ouiColorPrimary: #93c5fd;       // Blue light
 $ouiColorSecondary: #34d399;     // Green
-$ouiColorAccent: #a5b4fc;        // Indigo light
+$ouiColorAccent: #93c5fd;        // Blue light
 
 // Status
 $ouiColorSuccess: #34d399;       // Green
 $ouiColorWarning: #fbbf24;       // Amber
 $ouiColorDanger: #f87171;        // Red
 
-// Shades — Glass dark violet-tinted
-$ouiColorEmptyShade: #160e2a;             // Card surfaces (deep dark)
-$ouiColorLightestShade: #221840;          // Subtle backgrounds
-$ouiColorLightShade: #3d2d5c;             // Borders (clearly visible)
+// Shades — Glass dark blue-tinted
+$ouiColorEmptyShade: #0d1226;             // Card surfaces (deep dark)
+$ouiColorLightestShade: #161d3a;          // Subtle backgrounds
+$ouiColorLightShade: #2b3556;             // Borders (clearly visible)
 $ouiColorMediumShade: rgba(250, 250, 250, 0.50); // Muted text
 $ouiColorDarkShade: #fafafa;              // Body text
 $ouiColorDarkestShade: #ffffff;           // Foreground text
 $ouiColorFullShade: #FFFFFF;              // Brightest foreground
 
 // Backgrounds
-$ouiPageBackgroundColor: #0d0818;         // Glass dark violet canvas
-$ouiColorHighlight: #1f1633;              // Elevated surface
+$ouiPageBackgroundColor: #080c18;         // Glass dark blue canvas
+$ouiColorHighlight: #141b30;              // Elevated surface
 
 // Form input background
-$ouiFormBackgroundColor: #2c2042;
+$ouiFormBackgroundColor: #1d2740;
 
 // CodeBlock — Glass dark syntax palette
 $ouiCodeBlockCommentShade: rgba(250, 250, 250, 0.32); // ink-fade
 $ouiCodeBlockStringShade: #fbbf24;   // amber — strings
-$ouiCodeBlockNameShade: #a5b4fc;     // indigo — keywords/commands
+$ouiCodeBlockNameShade: #93c5fd;     // blue — keywords/commands
 $ouiCodeBlockNumberShade: #34d399;   // green — numerics
-$ouiCodeBlockKeywordShade: #818cf8;  // indigo bright — keywords
-$ouiCodeBlockTypeShade: #a5b4fc;     // indigo
+$ouiCodeBlockKeywordShade: #60a5fa;  // blue bright — keywords
+$ouiCodeBlockTypeShade: #93c5fd;     // blue
 $ouiCodeBlockTitleShade: #fafafa;    // ink
 
 // Variations from core
@@ -67,7 +67,7 @@ $ouiColorWarningText: makeHighContrastColor($ouiColorWarning) !default;
 $ouiColorDangerText: makeHighContrastColor($ouiColorDanger) !default;
 $ouiColorDisabledText: rgba(250, 250, 250, 0.32) !default;
 $ouiColorSuccessText: $ouiColorSecondaryText !default;
-$ouiLinkColor: #818cf8 !default; // accent-bright
+$ouiLinkColor: #60a5fa !default; // accent-bright
 
 // Charts
 $ouiColorChartLines: $ouiColorLightShade;
@@ -89,11 +89,11 @@ $ouiShadow4: 0 4px 12px rgba(0, 0, 0, 0.4), 0 24px 48px rgba(0, 0, 0, 0.4);
 $ouiShadow5: 0 4px 12px rgba(0, 0, 0, 0.4), 0 24px 48px rgba(0, 0, 0, 0.4);
 
 // Border color
-$ouiBorderColor: #392a54;
+$ouiBorderColor: #283150;
 
 // Elevated surfaces
-$ouiBackgroundElevated: #1f1633;
-$ouiBorderElevated: #392a54;
+$ouiBackgroundElevated: #141b30;
+$ouiBorderElevated: #283150;
 
 //CodeBlock Colors
 $ouiCodeBlockCommentColor: $ouiCodeBlockCommentShade;

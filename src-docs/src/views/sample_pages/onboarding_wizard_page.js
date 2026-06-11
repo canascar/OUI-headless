@@ -972,7 +972,7 @@ export const OnboardingWizardPage = () => {
   const themeContext = useContext(ThemeContext);
   const isDark = themeContext.theme === 'v9-dark';
   const mascotColor = isDark ? ['#FFFFFF', '#D9DEE5'] : ['#14558E', '#153A5A'];
-  const mascotEyeColor = isDark ? '#181028' : '#fff';
+  const mascotEyeColor = isDark ? '#101828' : '#fff';
 
   const [showIntro, setShowIntro] = useState(true);
   const [introExiting, setIntroExiting] = useState(false);

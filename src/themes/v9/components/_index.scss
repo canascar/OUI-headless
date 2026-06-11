@@ -51,17 +51,17 @@
   // ---- Canvas ----
   --g-bg: #{$ouiPageBackgroundColor};
   --g-bg-gradient:
-    radial-gradient(ellipse 40% 35% at 0% 0%, hsl(245 80% 90% / 0.55), transparent 60%),
+    radial-gradient(ellipse 40% 35% at 0% 0%, hsl(222 80% 90% / 0.55), transparent 60%),
     radial-gradient(ellipse 35% 30% at 100% 8%, hsl(215 90% 92% / 0.45), transparent 60%),
-    radial-gradient(ellipse 35% 30% at 100% 100%, hsl(260 80% 92% / 0.45), transparent 60%),
+    radial-gradient(ellipse 35% 30% at 100% 100%, hsl(218 80% 92% / 0.45), transparent 60%),
     radial-gradient(ellipse 35% 30% at 5% 100%, hsl(230 80% 92% / 0.40), transparent 60%);
 
   // ---- Surfaces ----
   --g-surface: #{$ouiColorEmptyShade};
-  --g-surface-muted: #{lightOrDarkTheme(#f7f7f5, #1f1633)};
+  --g-surface-muted: #{lightOrDarkTheme(#f7f7f5, #141b30)};
   --g-surface-subtle: #{$ouiColorLightestShade};
   --g-surface-border: #{$ouiColorLightShade};
-  --g-surface-border-strong: #{lightOrDarkTheme(#e0e0e4, #392a54)};
+  --g-surface-border-strong: #{lightOrDarkTheme(#e0e0e4, #283150)};
 
   // ---- Frosted glass ----
   --g-glass: rgba(255, 255, 255, 0.62);
@@ -78,16 +78,16 @@
   --g-ink-ghost: rgba(10, 10, 10, 0.10);
   --g-hairline: rgba(10, 10, 10, 0.07);
 
-  // ---- Accent: indigo / violet ----
+  // ---- Accent: blue ----
   --g-accent: #{$ouiColorPrimary};
-  --g-accent-bright: #4f46e5;
-  --g-accent-dim: rgba(99, 102, 241, 0.50);
-  --g-accent-soft: rgba(99, 102, 241, 0.10);
-  --g-accent-tint: rgba(99, 102, 241, 0.18);
-  --g-accent-ring: rgba(99, 102, 241, 0.22);
+  --g-accent-bright: #2563eb;
+  --g-accent-dim: rgba(59, 130, 246, 0.50);
+  --g-accent-soft: rgba(59, 130, 246, 0.10);
+  --g-accent-tint: rgba(59, 130, 246, 0.18);
+  --g-accent-ring: rgba(59, 130, 246, 0.22);
 
   // ---- Avatar gradient ring ----
-  --g-ring-from: hsl(245 90% 78%);
+  --g-ring-from: hsl(220 90% 78%);
   --g-ring-to: hsl(210 95% 80%);
 
   // ---- Status ----
@@ -176,22 +176,22 @@
   --ouiColorPrimary: #{$ouiColorPrimary};
 
   // Nav popover item hover/active states
-  --navItemHover: #{lightOrDarkTheme(rgba(99, 102, 241, 0.06), rgba(165, 180, 252, 0.10))};
-  --navItemActive: #{lightOrDarkTheme(rgba(99, 102, 241, 0.12), rgba(165, 180, 252, 0.18))};
+  --navItemHover: #{lightOrDarkTheme(rgba(59, 130, 246, 0.06), rgba(147, 197, 253, 0.10))};
+  --navItemActive: #{lightOrDarkTheme(rgba(59, 130, 246, 0.12), rgba(147, 197, 253, 0.18))};
 }
 
 // Glass scrollbar styles — thin floating inset pill
 *::-webkit-scrollbar { width: 9px; height: 9px; }
 *::-webkit-scrollbar-track { background: transparent; }
 *::-webkit-scrollbar-thumb {
-  background: #{lightOrDarkTheme(rgba(40, 34, 68, 0.16), rgba(255, 255, 255, 0.16))};
+  background: #{lightOrDarkTheme(rgba(34, 40, 68, 0.16), rgba(255, 255, 255, 0.16))};
   border: 3px solid transparent;
   border-radius: 999px;
   background-clip: padding-box;
   min-height: 40px;
 }
 *::-webkit-scrollbar-thumb:hover {
-  background: #{lightOrDarkTheme(#6366f1, #a5b4fc)};
+  background: #{lightOrDarkTheme(#3b82f6, #93c5fd)};
   border-width: 2px;
 }
 

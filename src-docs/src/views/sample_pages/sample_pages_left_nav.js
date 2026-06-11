@@ -2105,7 +2105,7 @@ export const SamplePagesLeftNav = ({
   const themeContext = useContext(ThemeContext);
   const isDark = themeContext.theme === 'v9-dark';
   const mascotColor = isDark ? ['#FFFFFF', '#D9DEE5'] : ['#14558E', '#153A5A'];
-  const mascotEyeColor = isDark ? '#181028' : '#fff';
+  const mascotEyeColor = isDark ? '#101828' : '#fff';
   const [appearanceSelection, setAppearanceSelection] = useState(
     isDark ? 'v9-dark' : 'v9-light'
   );

@@ -1544,7 +1544,7 @@ export const ThreadPage = ({
   const themeContext = useContext(ThemeContext);
   const isDark = themeContext.theme === 'v9-dark';
   const mascotColor = isDark ? ['#FFFFFF', '#D9DEE5'] : ['#14558E', '#153A5A'];
-  const mascotEyeColor = isDark ? '#181028' : '#fff';
+  const mascotEyeColor = isDark ? '#101828' : '#fff';
 
   const threadKey = selectedItem || (onNavigate ? null : 'latency-spike');
   const thread = (threadKey && THREADS[threadKey]) || NEW_THREAD;
@@ -2361,7 +2361,7 @@ export const ThreadPage = ({
                 className="threadPage__textarea"
               />
               <div className="threadPage__inputActions">
-                <OuiToolTip content="Attach" position="top">
+                <OuiToolTip content={isAttachMenuOpen ? '' : 'Attach'} position="top">
                   <OuiPopover
                     button={
                       <OuiButtonIcon

@@ -35,7 +35,7 @@ export const OllyIdle = ({ size = 24, expression, winkOnMount = true, showToolti
   const themeContext = useContext(ThemeContext);
   const isDark = themeContext.theme === 'v9-dark';
   const mascotColor = isDark ? ['#FFFFFF', '#D9DEE5'] : ['#14558E', '#153A5A'];
-  const mascotEyeColor = isDark ? '#181028' : '#fff';
+  const mascotEyeColor = isDark ? '#101828' : '#fff';
 
   const [interactionExpr, setInteractionExpr] = useState(undefined);
   const [mountExpr, setMountExpr] = useState(winkOnMount ? 'wink' : undefined);

@@ -27,6 +27,7 @@ import {
 } from '../../../../src/components';
 
 import { ThemeContext } from '../../components/with_theme';
+import { GLASS_TOKENS } from './glass_tokens';
 
 export const LoginPage = ({ onLogin }) => {
   const [username, setUsername] = useState('');
@@ -44,9 +45,9 @@ export const LoginPage = ({ onLogin }) => {
   };
 
   // Glass theme tokens
-  const bgColor = isDark ? '#0d0818' : '#f8f7fc';
+  const bgColor = isDark ? GLASS_TOKENS.canvasDark : '#f8f7fc';
   const panelBg = isDark
-    ? 'rgba(24, 16, 40, 0.55)'
+    ? GLASS_TOKENS.panelTintDark
     : 'rgba(255, 255, 255, 0.62)';
   const borderColor = isDark
     ? 'rgba(255, 255, 255, 0.10)'

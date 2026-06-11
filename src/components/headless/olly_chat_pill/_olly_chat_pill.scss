@@ -16,8 +16,8 @@
   border-radius: 14px;
   border: 1px solid transparent;
   box-shadow: lightOrDarkTheme(
-    0 4px 16px rgba(99, 102, 241, 0.12),
-    0 4px 20px rgba(30, 15, 60, 0.50)
+    0 4px 16px rgba(59, 130, 246, 0.12),
+    0 4px 20px rgba(15, 23, 60, 0.50)
   );
   width: 240px;
   position: relative;
@@ -37,11 +37,11 @@
     padding: 1px;
     background: conic-gradient(
       from var(--olly-pill-angle, 0deg),
-      lightOrDarkTheme(rgba(99, 102, 241, 0.25), rgba(165, 180, 252, 0.30)),
+      lightOrDarkTheme(rgba(59, 130, 246, 0.25), rgba(147, 197, 253, 0.30)),
       lightOrDarkTheme(rgba(16, 185, 129, 0.20), rgba(52, 211, 153, 0.25)),
-      lightOrDarkTheme(rgba(99, 102, 241, 0.10), rgba(165, 180, 252, 0.12)),
+      lightOrDarkTheme(rgba(59, 130, 246, 0.10), rgba(147, 197, 253, 0.12)),
       lightOrDarkTheme(rgba(217, 119, 6, 0.15), rgba(251, 191, 36, 0.20)),
-      lightOrDarkTheme(rgba(99, 102, 241, 0.25), rgba(165, 180, 252, 0.30))
+      lightOrDarkTheme(rgba(59, 130, 246, 0.25), rgba(147, 197, 253, 0.30))
     );
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -67,19 +67,19 @@
 
   &:hover {
     box-shadow: lightOrDarkTheme(
-      0 8px 28px rgba(99, 102, 241, 0.18),
-      0 8px 32px rgba(30, 15, 60, 0.60)
+      0 8px 28px rgba(59, 130, 246, 0.18),
+      0 8px 32px rgba(15, 23, 60, 0.60)
     );
     transform: translateY(-1px);
 
     &::before {
       background: conic-gradient(
         from var(--olly-pill-angle, 0deg),
-        lightOrDarkTheme(rgba(99, 102, 241, 0.45), rgba(165, 180, 252, 0.50)),
+        lightOrDarkTheme(rgba(59, 130, 246, 0.45), rgba(147, 197, 253, 0.50)),
         lightOrDarkTheme(rgba(16, 185, 129, 0.35), rgba(52, 211, 153, 0.40)),
-        lightOrDarkTheme(rgba(99, 102, 241, 0.20), rgba(165, 180, 252, 0.22)),
+        lightOrDarkTheme(rgba(59, 130, 246, 0.20), rgba(147, 197, 253, 0.22)),
         lightOrDarkTheme(rgba(217, 119, 6, 0.30), rgba(251, 191, 36, 0.35)),
-        lightOrDarkTheme(rgba(99, 102, 241, 0.45), rgba(165, 180, 252, 0.50))
+        lightOrDarkTheme(rgba(59, 130, 246, 0.45), rgba(147, 197, 253, 0.50))
       );
     }
   }
@@ -88,8 +88,8 @@
     width: 400px;
     border-color: $ouiColorPrimary;
     box-shadow: lightOrDarkTheme(
-      0 8px 28px rgba(99, 102, 241, 0.22),
-      0 8px 32px rgba(30, 15, 60, 0.70)
+      0 8px 28px rgba(59, 130, 246, 0.22),
+      0 8px 32px rgba(15, 23, 60, 0.70)
     );
     transform: translateY(-1px);
 

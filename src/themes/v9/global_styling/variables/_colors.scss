@@ -18,10 +18,10 @@ $ouiColorGhost: #FFFFFF !default;
 $ouiColorInk: #0a0a0a !default;
 
 // Glass Theme — Light
-// Core — indigo/violet accent palette
-$ouiColorPrimary: #6366f1 !default;       // Indigo — primary accent
+// Core — blue accent palette
+$ouiColorPrimary: #3b82f6 !default;       // Blue — primary accent
 $ouiColorSecondary: #10b981 !default;     // Green — success
-$ouiColorAccent: #6366f1 !default;        // Indigo — accent (same as primary)
+$ouiColorAccent: #3b82f6 !default;        // Blue — accent (same as primary)
 
 // Status — deliberately desaturated
 $ouiColorSuccess: #10b981 !default;       // Green
@@ -55,7 +55,7 @@ $ouiColorWarningText: makeHighContrastColor($ouiColorWarning) !default;
 $ouiColorDangerText: makeHighContrastColor($ouiColorDanger) !default;
 $ouiColorDisabledText: makeDisabledContrastColor($ouiColorDisabled) !default;
 $ouiColorSuccessText: $ouiColorSecondaryText !default;
-$ouiLinkColor: #4f46e5 !default; // accent-bright
+$ouiLinkColor: #2563eb !default; // accent-bright
 
 // Visualization colors
 
@@ -72,8 +72,8 @@ $ouiPaletteColorBlind: (
   ouiColorVis2: (graphic: #D36086,
     behindText: #EE789D,
   ),
-  ouiColorVis3: (graphic: #9170B8,
-    behindText: #A987D1,
+  ouiColorVis3: (graphic: #6E8FD0,
+    behindText: #8AA6DE,
   ),
   ouiColorVis4: (graphic: #CA8EAE,
     behindText: #E4A6C7,
@@ -105,8 +105,8 @@ $ouiPaletteColorBlind: (
   ouiColorVis13: (graphic: #0C8967,
     behindText: #0C8967,
   ),
-  ouiColorVis14: (graphic: #6E28C3,
-    behindText: #6E28C3,
+  ouiColorVis14: (graphic: #2D5BD0,
+    behindText: #2D5BD0,
   ),
   ouiColorVis15: (graphic: #D76813,
     behindText: #D76813,
@@ -220,8 +220,8 @@ $euiPaletteColorBlind: (
   euiColorVis2: (graphic: #D36086,
     behindText: #EE789D,
   ),
-  euiColorVis3: (graphic: #9170B8,
-    behindText: #A987D1,
+  euiColorVis3: (graphic: #6E8FD0,
+    behindText: #8AA6DE,
   ),
   euiColorVis4: (graphic: #CA8EAE,
     behindText: #E4A6C7,

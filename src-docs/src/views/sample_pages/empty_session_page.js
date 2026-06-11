@@ -40,6 +40,7 @@ import { SOURCE_PAGE_MOCK } from './session_models';
 import { OllyAvatar } from './olly_avatar';
 import { Mascot } from '../../../../olly-mascot/Mascot';
 import { ThemeContext } from '../../components/with_theme';
+import { GLASS_TOKENS } from './glass_tokens';
 
 /**
  * Quick access shortcut definitions.
@@ -313,7 +314,7 @@ const DualPurposeInput = ({ onStartThread, onOpenPage, onSearchChange, onFocus, 
           className="emptySessionPage__textarea"
         />
         <div className="emptySessionPage__inputActions">
-          <OuiToolTip content="Attach" position="top">
+          <OuiToolTip content={isAttachMenuOpen ? '' : 'Attach'} position="top">
             <OuiPopover
               button={
                 <OuiButtonIcon
@@ -685,7 +686,7 @@ export const EmptySessionPage = ({
   const themeContext = useContext(ThemeContext);
   const isDark = themeContext.theme === 'v9-dark';
   const mascotColor = isDark ? ['#FFFFFF', '#D9DEE5'] : ['#14558E', '#153A5A'];
-  const mascotEyeColor = isDark ? '#181028' : '#fff';
+  const mascotEyeColor = isDark ? '#101828' : '#fff';
 
   const [greeting] = useState(() => {
     const greetings = [
@@ -909,17 +910,17 @@ export const EmptySessionPage = ({
                       </div>
                       <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13 }}>
                         <span style={{ flex: '0 0 100px' }}>checkout</span>
-                        <span style={{ flex: 1, height: 8, borderRadius: 4, background: 'linear-gradient(90deg, #a5b4fc 66.67%, transparent 66.67%)' }} />
+                        <span style={{ flex: 1, height: 8, borderRadius: 4, background: `linear-gradient(90deg, ${GLASS_TOKENS.accentDark} 66.67%, transparent 66.67%)` }} />
                         <span style={{ fontWeight: 600 }}>66.67%</span>
                       </div>
                       <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13 }}>
                         <span style={{ flex: '0 0 100px' }}>frontend</span>
-                        <span style={{ flex: 1, height: 8, borderRadius: 4, background: 'linear-gradient(90deg, #a5b4fc 14.49%, transparent 14.49%)' }} />
+                        <span style={{ flex: 1, height: 8, borderRadius: 4, background: `linear-gradient(90deg, ${GLASS_TOKENS.accentDark} 14.49%, transparent 14.49%)` }} />
                         <span style={{ fontWeight: 600 }}>14.49%</span>
                       </div>
                       <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13 }}>
                         <span style={{ flex: '0 0 100px' }}>frontend-proxy</span>
-                        <span style={{ flex: 1, height: 8, borderRadius: 4, background: 'linear-gradient(90deg, #a5b4fc 14.29%, transparent 14.29%)' }} />
+                        <span style={{ flex: 1, height: 8, borderRadius: 4, background: `linear-gradient(90deg, ${GLASS_TOKENS.accentDark} 14.29%, transparent 14.29%)` }} />
                         <span style={{ fontWeight: 600 }}>14.29%</span>
                       </div>
                     </div>
