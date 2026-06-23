@@ -108,6 +108,13 @@ export function openCanvasPage(state, sessionId, pageKey, title) {
     sessions: state.sessions.map((session) => {
       if (session.id !== sessionId) return session;
 
+      // If the chat is expanded full-screen (canvas collapsed), opening a page
+      // should reveal the canvas by switching to side-by-side so the new tab shows.
+      const nextPanelState =
+        session.threadPanelState === 'full-screen'
+          ? 'side-by-side'
+          : session.threadPanelState;
+
       // Deduplicate: if a tab with the same pageKey and title exists, just activate it
       const existingTab = session.tabs.find(
         (tab) => tab.pageKey === pageKey && tab.title === title
@@ -116,6 +123,7 @@ export function openCanvasPage(state, sessionId, pageKey, title) {
         return {
           ...session,
           activeTabId: existingTab.id,
+          threadPanelState: nextPanelState,
         };
       }
 
@@ -130,6 +138,7 @@ export function openCanvasPage(state, sessionId, pageKey, title) {
         ...session,
         tabs: [...session.tabs, newTab],
         activeTabId: newTab.id,
+        threadPanelState: nextPanelState,
       };
     }),
   };
