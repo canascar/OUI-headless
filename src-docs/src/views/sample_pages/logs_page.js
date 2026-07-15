@@ -1139,8 +1139,8 @@ export const LogsPageBody = ({
           />
         )}
         <div className="discoverPage__contentCol">
-          <div style={{ padding: '0', overflow: 'auto', flex: 1 }}>
-            <OuiPanel paddingSize="none" hasShadow={false} hasBorder>
+          <div style={{ padding: '0', overflow: 'auto', flex: 1, display: 'flex', flexDirection: 'column' }}>
+            <OuiPanel paddingSize="none" hasShadow={false} hasBorder style={{ flex: 1 }}>
               <OuiBasicTable
                 items={results}
                 itemId="id"
@@ -1460,8 +1460,8 @@ export const LogsPage = ({
           </>
         )}
         <div className="discoverPage__contentCol">
-          <div style={{ padding: '0', overflow: 'auto', flex: 1 }}>
-            <OuiPanel paddingSize="none" hasShadow={false} hasBorder>
+          <div style={{ padding: '0', overflow: 'auto', flex: 1, display: 'flex', flexDirection: 'column' }}>
+            <OuiPanel paddingSize="none" hasShadow={false} hasBorder style={{ flex: 1 }}>
               <OuiBasicTable
                 items={results}
                 itemId="id"

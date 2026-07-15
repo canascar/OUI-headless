@@ -810,7 +810,7 @@ export const DashboardPageMock = () => (
 
     <OuiSpacer size="m" />
 
-    <OuiPanel paddingSize="m" hasShadow={false} hasBorder>
+    <OuiPanel paddingSize="m" hasShadow={false} hasBorder style={{ flex: 1 }}>
       <OuiTitle size="xs">
         <h3>P99 latency timeline</h3>
       </OuiTitle>

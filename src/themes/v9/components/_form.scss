@@ -458,10 +458,15 @@
 }
 
 // Thread/session textareas — remove inner border on focus (outer layout handles it)
+// Also clear the OUI focus underline (drawn via background-image gradient) so no
+// second inner bottom border appears inside the accent-bordered wrapper.
+.ouiTextArea.threadPage__textarea,
+.ouiTextArea.emptySessionPage__textarea,
 .ouiTextArea.threadPage__textarea:focus,
 .ouiTextArea.emptySessionPage__textarea:focus {
   border-color: transparent !important;
   box-shadow: none !important;
+  background-image: none !important;
 }
 
 // Fields inside a group (with append/prepend buttons or labels): don't
